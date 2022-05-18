@@ -1,0 +1,32 @@
+.input-group {}
+
+input {
+  width: 300px;
+}
+
+.blockCalc {
+  border-left: 1px solid #ccc;
+  width: 50%;
+}
+
+.btn {
+  width: 100px;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.btn-active {
+  color: #fff;
+  border: 1px solid green;
+  background-color: green;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.blockContainer {
+  display: flex;
+
+}
