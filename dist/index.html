@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script defer src="bundle.js"></script></head>
+
+<body>
+  <div class="blockContainer">
+    <div class="blockCalc">
+
+      <!-- Стоимость недвижимости -->
+      <div>
+        <p>Стоимость недвижимости</p>
+        <div>
+          <input class="input input-number" type="number" name="propertyCost" id="propCost" min="10000" max="30000"
+            value="10000" data-type="cost">
+        </div>
+        <div>
+          <input class="input input-range" type="range" name="propCostRange" id="propCostRange" min="10000" max="30000"
+            value="10000">
+        </div>
+      </div>
+      <hr>
+      <!-- Первоначальный взнос -->
+      <div>
+        <p>Первоначальный взнос</p>
+        <div>
+          <input class="input input-number" type="number" name="initialFee" id="initialFee" min="1000" max="3000"
+            value="1000" data-type="fee">
+        </div>
+        <div>
+          <input class="input input-range" type="range" name="initialFeeRange" id="initialFeeRange" min="1000"
+            max="3000" value="1000">
+        </div>
+      </div>
+      <hr>
+      <!-- Срок кредита -->
+      <div>
+        <p>Срок кредита</p>
+        <div>
+          <input class="input input-number" type="number" name="creditTerm" id="creditTerm" min="1" max="20" value="1"
+            data-type="term">
+        </div>
+        <div>
+          <input class="input input-range" type="range" name="creditTermRange" id="creditTermRange" min="1" max="20"
+            value="1">
+        </div>
+      </div>
+    </div>
+    <div class="blockCalc">
+
+      <div>
+        <h2>Сумма кредита</h2>
+        <p id="amountCredit">123</p>
+      </div>
+      <div>
+        <h2>Ежемесячный платеж</h2>
+        <p id="monthlyPayment">123</p>
+      </div>
+      <div>
+        <h2>Рекомендуемый доход</h2>
+        <p id="recommendedIncome">123</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="blockCalc">
+    <h1>Банки</h1>
+    <div>
+      <button class="btn btn-active mb-1 bank" data-bank="alfa">Alfa</button>
+    </div>
+    <div>
+      <button class="btn  mb-1 bank" data-bank="sberbank">Sberbank</button>
+    </div>
+    <div>
+      <button class="btn bank" data-bank="pochta">Pochta</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
